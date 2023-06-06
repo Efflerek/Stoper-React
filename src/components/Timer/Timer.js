@@ -30,6 +30,14 @@ const Timer = () => {
     setTime(0);
   };
 
+  return (
+    <div>
+      <FormattedTime time={time} />
+      <Button action={handleStart}>Start</Button>
+      <Button action={handleStop}>Stop</Button>
+      <Button action={handleReset}>Reset</Button>
+    </div>
+  );
 };
 
 export default Timer;
